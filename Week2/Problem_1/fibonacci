@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string fibonacci_sequence = ""; // To store Fibonacci sequence as a string
+    int n, a = 0, b = 1, next;
+
+    cout << "Enter the number of terms for Fibonacci sequence: ";
+    cin >> n;
+
+    fibonacci_sequence += to_string(a) + ", " + to_string(b); // Adding first two terms
+
+    for (int i = 3; i <= n; ++i) {
+        next = a + b;
+        fibonacci_sequence += ", " + to_string(next); // Append next term to the string
+        a = b;
+        b = next;
+    }
+
+    cout << "Fibonacci sequence: " << fibonacci_sequence << endl;
+    return 0;
+}
