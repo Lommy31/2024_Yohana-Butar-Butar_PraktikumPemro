@@ -1,47 +1,50 @@
 #include <iostream>
+#include <cmath>
 #include <fstream>
-#include <string>
+using namespace std;
 
-// Function to generate the Fibonacci sequence as a string
-std::string fibonacci(int n) {
-    std::string result;
-    int a = 0, b = 1, next;
+int main()
+{
+    string name;
+    int gsalary, tax, instal, insue, net;
 
-    for (int i = 1; i <= n; ++i) {
-        result += std::to_string(a);
-        if (i != n) { // Avoid adding a trailing space after the last number
-            result += " ";
-        }
-        next = a + b;
-        a = b;
-        b = next;
+    // Create an output file stream
+    ofstream outputFile("payslip.txt");
+
+    if (!outputFile) {
+        cout << "Unable to open output file";
+        return 1; // Exit with an error code
     }
 
-    return result;
-}
+    outputFile << "Payslip For Employee" << endl;
+    outputFile << "--------------------------" << endl;
+    outputFile << "Name of the employee: ";
+    cin >> name;
+    outputFile << name << endl;
 
-int main() {
-    std::ifstream testFile("test.txt");
-    int input;
-    std::string expected_output;
+    outputFile << "The Gross Salary: : Rp";
+    cin >> gsalary;
+    outputFile << gsalary << endl;
 
-    if (!testFile) {
-        std::cerr << "Error: Could not open test.txt" << std::endl;
-        return 1;
-    }
+    tax = gsalary * 0.2;
+    outputFile << "Tax (20%): Rp" << tax << endl;
 
-    int test_num = 1;
-    while (testFile >> input && std::getline(testFile >> std::ws, expected_output)) {
-        std::string output = fibonacci(input);
-        if (output == expected_output) {
-            std::cout << "Test " << test_num << " passed!" << std::endl;
-        } else {
-            std::cout << "Test " << test_num << " failed. Expected: \"" 
-                      << expected_output << "\", Got: \"" << output << "\"" << std::endl;
-        }
-        test_num++;
-    }
+    outputFile << "Installment: Rp";
+    cin >> instal;
+    outputFile << instal << endl;
 
-    testFile.close();
+    outputFile << "Insurance: Rp";
+    cin >> insue;
+    outputFile << insue << endl;
+
+    outputFile << "Net Salary: Rp";
+    cin >> gsalary >> instal >> insue;
+    net = gsalary - 0.2 * gsalary - instal - insue;
+    outputFile << net << endl;
+
+    outputFile.close();
+
+    cout << "Payslip generated successfully. Check payslip.txt file." << endl;
+
     return 0;
 }
