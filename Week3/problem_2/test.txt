@@ -1,1 +1,6 @@
+Enter the first number: 15
+Enter the second number: 7
+Enter the third number: 22
+
+The large number is: 22
 
