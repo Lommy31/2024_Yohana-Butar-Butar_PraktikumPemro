@@ -1,1 +1,20 @@
+Test 1:
+The Value of Coefficients: 1a, -3b, 2c
+So The Discriminant is Positive 1
+The Roots are Real and Different
+Root 1: 2
+Root 2: 1
+
+Test 2:
+The Value of Coefficients: 1a, -2b, 1c
+So The Discriminant is Zero 0
+The Roots are Real and the Same
+Root: 1
+
+Test 2=3:
+The Value of Coefficients: 1a, 2b, 5c
+So The Discriminant is negative -16
+Roots are Complex and Different
+Root 1: -1 + 2i
+Root 2: -1 - 2i
 
