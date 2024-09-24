@@ -5,7 +5,7 @@ int main()
 {
 int a, b, c, d, x1, x2, quad; // we use integer
 cout << "Problem 2" << endl;
-cout << "-----------------------------";
+cout << "---------------------------------";
 cout << "\nThe Number of a, b, and c : "; //Put the number of a, b, and c
 cin >> a >> b >> c;
 
