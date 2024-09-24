@@ -1,1 +1,43 @@
+Employee 1:
+------------------------------------
+Name of The Employee: Yohana Amelia
+------------------------------------
+The Gross Salary:   : Rp  27000.00
+Tax (20%)           : Rp   5400.00
+Installment         : Rp   3000.00
+Insurance           : Rp   1500.00
+Net Salary          : Rp  17100.00
+------------------------------------
 
+Employee 2:
+------------------------------------
+Name of The Employee: Finanazwa
+------------------------------------
+The Gross Salary:   : Rp 120000.00
+Tax (20%)           : Rp  24000.00
+Installment         : Rp   2000.00
+Insurance           : Rp   1300.00
+Net Salary          : Rp  92700.00
+------------------------------------
+
+Employee 3:
+------------------------------------
+Name of The Employee: Regina Joan
+------------------------------------
+The Gross Salary:   : Rp  38250.00
+Tax (20%)           : Rp   7650.00
+Installment         : Rp   1000.00
+Insurance           : Rp   1100.00
+Net Salary          : Rp  28500.00
+------------------------------------
+
+Employee 4:
+------------------------------------
+Name of The Employee: Deira Aliyah
+------------------------------------
+The Gross Salary:   : Rp  27000.00
+Tax (20%)           : Rp   5400.00
+Installment         : Rp      0.00
+Insurance           : Rp      0.00
+Net Salary          : Rp  21600.00
+------------------------------------
