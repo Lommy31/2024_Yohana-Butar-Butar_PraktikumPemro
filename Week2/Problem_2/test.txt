@@ -1,1 +1,9 @@
+Problem 2
+-----------------------------
+The Number of a, b, and c : 3 8 1
+The Total of Discriminant: 52
+
+Roots are Real and Different
+x1: 0
+x2: -2
 
