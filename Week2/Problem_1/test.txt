@@ -1,1 +1,8 @@
-
+Payslip For Employee
+------------------------------
+Name of the employee: Hana
+The Gross Salary: : Rp35000000
+Tax (20%): Rp7000000
+Installment: Rp200000
+Insurance: Rp150000
+Net Salary: Rp27650000
