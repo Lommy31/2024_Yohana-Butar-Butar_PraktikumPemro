@@ -1,23 +1,27 @@
-# Variables
-CXX = g++
-CXXFLAGS = -Wall
-TARGET = fibonacci
-SRC = fibonacci.cpp
+# Target to compile the object file
+payslip: payslip.o
+	g++ payslip.o -o payslip.exe
 
-# Default target: compile the program
-all: $(TARGET)
+# Target to compile the C++ program
+payslip.o: payslip.cpp
+	g++ -c payslip.cpp -o payslip.o
 
-# Compile the fibonacci.cpp
-$(TARGET): $(SRC)
-	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SRC)
+# Target to run the program (interactively)
+run: payslip
+	./payslip.exe
 
-# Run the program in test mode (using test.txt)
-test: $(TARGET)
-	./$(TARGET) test
+# Target to compile the object Test file
+payslipTest: payslipTest.o
+	g++ payslipTest.o -o payslipTest.exe
 
-# Clean up the compiled files
+# Target to compile the C++ Test program
+payslipTest.o: payslipTest.cpp
+	g++ -c payslipTest.cpp -o payslipTest.o
+
+# Target to run the Test program
+test: payslipTest
+	./payslipTest.exe
+
+# Target to clean up compiled files
 clean:
-	rm -f $(TARGET)
-
-# Phony targets to avoid conflicts
-.PHONY: all clean test
+	rm -f payslip.o payslipTest.o payslip.exe payslipTest.exe
