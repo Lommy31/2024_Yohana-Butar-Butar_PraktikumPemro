@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cmath>
 using namespace std;
+
 int main() {
 double a, b, c;
 cout << "Homework 3 P. Programming:";
@@ -12,7 +13,9 @@ cout << "b: ";
 cin >> b;
 cout << "c: ";
 cin >> c;
+
 double determinant = pow(b, 2) - 4 * a * c;
+
 if (determinant > 0) {
 double x1 = (-b + sqrt(determinant)) / (2 * a);
 double x2 = (-b - sqrt(determinant)) / (2 * a);
@@ -31,5 +34,6 @@ cout << "The roots are imaginary";
 cout << "\nx1 = " << realPart << " + " << imaginaryPart << "i" << endl;
 cout << "x2 = " << realPart << " - " << imaginaryPart << "i" << endl;
 }
+
 return 0;
 }
