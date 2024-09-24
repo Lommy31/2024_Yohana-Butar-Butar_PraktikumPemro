@@ -2,9 +2,9 @@
 #include <cmath>
 #include <iomanip>
 using namespace std;
+
 void Quadrat(double a, double b, double c) {
-double discrim = b * b - 4 * a * c; //The formuka to calculate the coeficient of a, b,
-and c
+double discrim = b * b - 4 * a * c; //The formuka to calculate the coeficient of a, b, and c
 cout << "The Value of Coefficients: " <<a<< "a, " << b<< "b, " <<c<< "c" << endl;
 if (discrim > 0) {//The formula to find the roots
 double root1 = (-b + sqrt(discrim)) / (2 * a);
