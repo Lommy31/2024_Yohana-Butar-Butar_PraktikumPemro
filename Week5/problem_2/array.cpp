@@ -1,26 +1,30 @@
 #include <iostream>
 #include <vector>
-#include <algorithm> 
-using namespace std;
 
 int main() {
-    
-    vector<int> numbers = {1, 2, 3, 4, 5}; //the value of the input
+    std::vector<int> original = {1, 2, 3, 4, 5};  // Initialize an example vector
+    std::vector<int> reversed;  // Create an empty vector for the reversed elements
 
-    cout << "Input: [";
-    for (size_t i = 0; i < numbers.size(); ++i) {
-        cout << numbers[i] << (i != numbers.size() - 1 ? ", " : "");
+    // Print the original vector as Input
+    std::cout << "Input: [";
+    for (size_t i = 0; i < original.size(); ++i) {
+        std::cout << original[i];
+        if (i < original.size() - 1) std::cout << ", ";
     }
-    cout << "]" << std::endl;
+    std::cout << "]\n";
 
-    vector<int> reversedNumbers = numbers;  // Make a copy of the input vector
-    reverse(reversedNumbers.begin(), reversedNumbers.end());
-
-    cout << "Output: [";
-    for (size_t i = 0; i < reversedNumbers.size(); ++i) {
-        cout << reversedNumbers[i] << (i != reversedNumbers.size() - 1 ? ", " : "");
+    // Reverse the vector manually
+    for (int i = original.size() - 1; i >= 0; --i) {
+        reversed.push_back(original[i]);
     }
-    cout << "]" << std::endl;
+
+    // Print the reversed vector as Output
+    std::cout << "Output: [";
+    for (size_t i = 0; i < reversed.size(); ++i) {
+        std::cout << reversed[i];
+        if (i < reversed.size() - 1) std::cout << ", ";
+    }
+    std::cout << "]\n";
 
     return 0;
 }
