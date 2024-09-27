@@ -1,28 +1,26 @@
-# Target to compile the object file
-larger_number: larger_number.o
-	g++ larger_number.o -o larger_number.exe
+#include <iostream>
+using namespace std;
 
-# Target to compile the C++ program
-larger_number.o: larger_number.cpp
-	g++ -c larger_number.cpp -o larger_number.o
+int main() {
+    int n, sum = 0;
 
-# Target to run the program (interactively)
-run: larger_number
-	./larger_number.exe
+    cout << "Input: "; //asking the user by enter the value 
+    cin >> n;
 
-# Target to compile the object Test file
-larger_numberTest: larger_numberTest.o
-	g++ larger_numberTest.o -o larger_numberTest.exe
+    for (int i = 1; i <= n; ++i) { //to calculate the sum by loop
+        sum += i;
+    }
 
-# Target to compile the C++ Test program
-larger_numberTest.o: larger_numberTest.cpp
-	g++ -c larger_numberTest.cpp -o larger_numberTest.o
+    cout << "Output: Sum = " << sum << endl;//the sum of the input
 
-# Target to run the Test program
-test: larger_numberTest
-	./larger_numberTest.exe
+    cout << "Explanation: ";
+    for (int i = 1; i <= n; ++i) {
+        cout << i;
+        if (i < n) {
+            cout << " + ";
+        }
+    }
+    cout << " = " << sum << endl;
 
-# Target to clean up compiled files
-clean:
-	rm -f larger_number.o larger_numberTest.o larger_number.exe larger_numberTest.exe
-
+    return 0;
+}
