@@ -9,7 +9,7 @@ int main() {
 
     cout << "Input: [";
     for (size_t i = 0; i < numbers.size(); ++i) {
-        std::cout << numbers[i] << (i != numbers.size() - 1 ? ", " : "");
+        cout << numbers[i] << (i != numbers.size() - 1 ? ", " : "");
     }
     cout << "]" << std::endl;
 
@@ -24,4 +24,3 @@ int main() {
 
     return 0;
 }
-
