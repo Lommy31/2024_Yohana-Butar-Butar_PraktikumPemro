@@ -1,4 +1,3 @@
-
 #include <iostream>
 using namespace std;
 
@@ -15,7 +14,7 @@ using namespace std;
 int main() { //main function
 
     int x,y;
-    cout << "Exercise Using Subprogram and Function One\n";
+    cout << "Exercise One Using Subprogram and Function\n";
     cout << "==========================================\n";
     cout << "The Value of x: "; //imput the value of x
     cin >> x >> y;
