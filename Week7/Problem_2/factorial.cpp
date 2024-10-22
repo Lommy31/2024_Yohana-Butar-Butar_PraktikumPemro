@@ -2,8 +2,8 @@
 using namespace std;
 
 int functional(int x) { //to call itself
-    if (x > 1) {
-        return x * functional(x -1); // tge formula of the function
+    if (x > 1) { //use if statement to call recurrence function 
+        return x * functional(x -1); // the formula of the function
     } else {
         return 1;
     }    
