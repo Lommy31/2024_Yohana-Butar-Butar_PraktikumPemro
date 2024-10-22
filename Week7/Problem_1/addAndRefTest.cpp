@@ -6,12 +6,12 @@ using namespace std;
 
 // Function to perform addition
 int addition(int x, int y) {
-    return x + y; // Return the result of addition
+    return x + y; //  the formula of addition
 }
 
 // Function to perform difference
 int difference(int x, int y) {
-    return x - y; // Return the result of difference
+    return x - y; // the formula of difference
 }
 
 int main() {
