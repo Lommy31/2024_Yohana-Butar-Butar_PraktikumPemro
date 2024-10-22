@@ -6,7 +6,7 @@ int addition(int x, int y) {
     return x + y;
 }
 
-// Function to perform subtraction (difference)
+// Function tof the subtraction formula (difference)
 int difference(int x, int y) {
     return x - y;
 }
@@ -17,11 +17,11 @@ int main() {
     int expectedAdd = 15;
     int expectedDiff = 5;
 
-    // Run the addition test
+    // Run the test
     bool addCorrect = (addition(x, y) == expectedAdd);
     bool diffCorrect = (difference(x, y) == expectedDiff);
 
-    // Output test result
+    // The Output of the test result
     if (addCorrect && diffCorrect) {
         cout << "Test passed." << endl;
     } else {
