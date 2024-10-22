@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int gcd(int x, int y) { //functoin of calculate the value GCD
+int gcd(int x, int y) { //function of calculate the value GCD
     if ( x%y == 0) return y;
     else return gcd(y, x%y);
 }
