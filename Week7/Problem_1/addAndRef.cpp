@@ -2,12 +2,12 @@
 using namespace std;
 
   void addition(int x, int y){
-        int add = x + y; //fincton to perform adddition
+        int add = x + y; //functon to perform adddition
         cout << "The Addition of " << x << " and " << y << " are: " << add << endl;
   }
   
   void difference(int x, int y){
-        int diff = x - y; //fincton to perform adddition
+        int diff = x - y; //functon to perform adddition
         cout << "The Difference of " << x << " and " << y << " are: " << diff << endl;
   }
 
