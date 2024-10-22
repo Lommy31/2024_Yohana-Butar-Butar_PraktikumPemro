@@ -11,7 +11,7 @@ int functional(int x) {
 }
 
 int main() {
-    // Test cases and expected results
+    // Test cases and  expected results
     int testCases[] = {5, 3, 7};
     int expectedResults[] = {120, 6, 5040};
     
@@ -22,7 +22,7 @@ int main() {
         int result = functional(testCases[i]);
         cout << "The Function of " << testCases[i] << "! = " << result << endl;
 
-        // Check if the result matches the expected result
+        // to check if the result matches the expected result
         if (result != expectedResults[i]) {
             allCorrect = false;
         }
