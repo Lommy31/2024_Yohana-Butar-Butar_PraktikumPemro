@@ -9,7 +9,7 @@ int functional(int x) { //to call itself
     }    
 }
 
-int main() {
+long long main() {
     
     int x;
     cout << "Exercise Two Recurrence Function to Calculate x!\n";
