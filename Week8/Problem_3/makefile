@@ -1,30 +1,30 @@
 # Target to compile the object file
-gcd: gcd.o
-	g++ gcd.o -o gcd.exe
+Bubble: Bubble.o
+	g++ Bubble.o -o Bubble.exe
 
 # Target to compile the C++ program
-gcd.o: gcd.cpp
-	g++ -c gcd.cpp -o gcd.o
+Bubble.o: Bubble.cpp
+	g++ -c Bubble.cpp -o Bubble.o
 
 # Target to run the program (interactively)
-run: gcd
-	./gcd.exe
+run: Bubble
+	./Bubble.exe
 
 # Target to compile the object Test file
-gcdTest: gcdTest.o
-	g++ gcdTest.o -o gcdTest.exe
+BubbleTest: BubbleTest.o
+	g++ BubbleTest.o -o BubbleTest.exe
 
 # Target to compile the C++ Test program
-gcdTest.o: gcdTest.cpp
-	g++ -c gcdTest.cpp -o gcdTest.o
+BubbleTest.o: BubbleTest.cpp
+	g++ -c BubbleTest.cpp -o BubbleTest.o
 
 # Target to run the Test program
-test: gcdTest
-	./gcdTest.exe
+test: BubbleTest
+	./BubbleTest.exe
 
 # Target to clean up compiled files
 clean:
-	rm -f gcd.o gcdTest.o gcd.exe gcdTest.exe
+	rm -f Bubble.o BubbleTest.o Bubble.exe BubbleTest.exe
 
 
 
