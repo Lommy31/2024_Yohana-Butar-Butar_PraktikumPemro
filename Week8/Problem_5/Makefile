@@ -1,31 +1,27 @@
 # Target to compile the object file
-gcd: gcd.o
-	g++ gcd.o -o gcd.exe
+Sequential: Sequential.o
+	g++ Sequential.o -o Sequential.exe
 
 # Target to compile the C++ program
-gcd.o: gcd.cpp
-	g++ -c gcd.cpp -o gcd.o
+Sequential.o: Sequential.cpp
+	g++ -c Sequential.cpp -o Sequential.o
 
 # Target to run the program (interactively)
-run: gcd
-	./gcd.exe
+run: Sequential
+	./Sequential.exe
 
 # Target to compile the object Test file
-gcdTest: gcdTest.o
-	g++ gcdTest.o -o gcdTest.exe
+SequentialTest: SequentialTest.o
+	g++ SequentialTest.o -o SequentialTest.exe
 
 # Target to compile the C++ Test program
-gcdTest.o: gcdTest.cpp
-	g++ -c gcdTest.cpp -o gcdTest.o
+SequentialTest.o: SequentialTest.cpp
+	g++ -c SequentialTest.cpp -o SequentialTest.o
 
 # Target to run the Test program
-test: gcdTest
-	./gcdTest.exe
+test: SequentialTest
+	./SequentialTest.exe
 
 # Target to clean up compiled files
 clean:
-	rm -f gcd.o gcdTest.o gcd.exe gcdTest.exe
-
-
-
-
+	rm -f Sequential.o SequentialTest.o Sequential.exe SequentialTest.exe
