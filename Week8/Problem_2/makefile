@@ -1,30 +1,30 @@
 # Target to compile the object file
-gcd: gcd.o
-	g++ gcd.o -o gcd.exe
+Selection: Selection.o
+	g++ Selection.o -o Selection.exe
 
 # Target to compile the C++ program
-gcd.o: gcd.cpp
-	g++ -c gcd.cpp -o gcd.o
+Selection.o: Selection.cpp
+	g++ -c Selection.cpp -o Selection.o
 
 # Target to run the program (interactively)
-run: gcd
-	./gcd.exe
+run: Selection
+	./Selection.exe
 
 # Target to compile the object Test file
-gcdTest: gcdTest.o
-	g++ gcdTest.o -o gcdTest.exe
+SelectionTest: SelectionTest.o
+	g++ SelectionTest.o -o SelectionTest.exe
 
 # Target to compile the C++ Test program
-gcdTest.o: gcdTest.cpp
-	g++ -c gcdTest.cpp -o gcdTest.o
+SelectionTest.o: SelectionTest.cpp
+	g++ -c SelectionTest.cpp -o SelectionTest.o
 
 # Target to run the Test program
-test: gcdTest
-	./gcdTest.exe
+test: SelectionTest
+	./SelectionTest.exe
 
 # Target to clean up compiled files
 clean:
-	rm -f gcd.o gcdTest.o gcd.exe gcdTest.exe
+	rm -f Selection.o SelectionTest.o Selection.exe SelectionTest.exe
 
 
 
